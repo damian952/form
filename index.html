@@ -14,11 +14,11 @@
 <body>
     <form class="form">
         <input type="text" class="form-field" id="name" placeholder="Imię" required>
-        <div class="messageOne"></div>
-        <input type="email" class="form-field" id="email" placeholder="adres email" required>
-        <div class="messageTwo"></div>
-        <input minlength="7" type="number" class="form-field" id="phone" placeholder="Nr telefonu" required>
-        <div class="messageThree"></div>
+        <div class="errorMessage  messageOne"></div>
+        <input type="email" class="form-field" id="email" placeholder="Adres email" required>
+        <div class="errorMessage messageTwo"></div>
+        <input type="text" class="form-field" id="phone" placeholder="Nr telefonu" required />
+        <div class="errorMessage messageThree"></div>
 
 
         <select required>
@@ -30,11 +30,9 @@
         </select>
         <div class="tooltip">
 
-            <input type="checkbox" class="checkbox" id="agrement" required>
-            consequatur Lorem ipsum de consequatur
-            Lorem ipsum de consequatur<span>[rozwin]</span>
+            <input type="checkbox" class="checkbox" id="agrement" required> Czy wyrażasz zgodę? <span>[rozwin]</span>
             <span class="tooltip-text">lorem korem lorem dore</span>
-            <div id="agrementError"></div>
+            <div class="errorMessage" id="agrementError"></div>
         </div>
         <button type="submit" class="button">wyślij</button>
 
