@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+
+    form.form {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        background: #000000bf;
+        color: white;
+        max-width: 280px;
+
+
+
+
+        .form-field {
+            border-radius: 9999em;
+            padding: 5px 30px;
+            border: 0;
+            margin: 12px;
+            background-color: white;
+
+            &:focus {
+                background: white;
+            }
+        }
+
+        select {
+            background: transparent;
+            border: 0;
+            margin: 15px;
+            font-size: 15px;
+            width: 218px;
+            border-radius: 9999em;
+            padding: 4px;
+            background-color: white;
+
+
+            .select-value {
+                background: #ffffff;
+                color: black;
+                font-size: 15px;
+                padding: 0;
+                margin: 0;
+
+
+            }
+        }
+
+    }
+
+    div.tooltip {
+        margin-top: 10px;
+        padding: 0 15px;
+
+        input.checkbox {
+            padding: 0;
+            margin: 0;
+        }
+
+        span {
+            position: relative;
+            display: block;
+
+
+            &:hover+span.tooltip-text {
+                visibility: visible;
+            }
+        }
+
+
+
+        span.tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: #ddd;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 3px 0;
+
+
+        }
+    }
+
+    button {
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        background: white;
+        color: black;
+        border-radius: 22px;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: all 0.2s linear;
+        font-size: 15px;
+
+        &:hover {
+            background-color: #7f962f;
+        }
+    }
+}

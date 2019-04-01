@@ -1,0 +1,117 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body form.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  background: #000000bf;
+  color: white;
+  max-width: 280px;
+}
+
+body form.form .form-field {
+  border-radius: 9999em;
+  padding: 5px 30px;
+  border: 0;
+  margin: 12px;
+  background-color: white;
+}
+
+body form.form .form-field:focus {
+  background: white;
+}
+
+body form.form select {
+  background: transparent;
+  border: 0;
+  margin: 15px;
+  font-size: 15px;
+  width: 218px;
+  border-radius: 9999em;
+  padding: 4px;
+  background-color: white;
+}
+
+body form.form select .select-value {
+  background: #ffffff;
+  color: black;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+body div.tooltip {
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+body div.tooltip input.checkbox {
+  padding: 0;
+  margin: 0;
+}
+
+body div.tooltip span {
+  position: relative;
+  display: block;
+}
+
+body div.tooltip span:hover + span.tooltip-text {
+  visibility: visible;
+}
+
+body div.tooltip span.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #ddd;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+}
+
+body button {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background: white;
+  color: black;
+  border-radius: 22px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-size: 15px;
+}
+
+body button:hover {
+  background-color: #7f962f;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+
+<body>
+    <form class="form">
+        <input type="text" class="form-field" id="name" placeholder="Imię" required>
+        <div class="messageOne"></div>
+        <input type="email" class="form-field" id="email" placeholder="adres email" required>
+        <div class="messageTwo"></div>
+        <input minlength="7" type="number" class="form-field" id="phone" placeholder="Nr telefonu" required>
+        <div class="messageThree"></div>
+
+
+        <select required>
+            <option value="" disabled selected hidden>Miasto</option>>
+            <option value="krakow" class="select-value">Kraków</option>
+            <option value="warszawa" class="select-value">Warszawa</option>
+            <option value="poznan" class="select-value">Poznan</option>
+            <option value="gdansk" class="select-value">Gdansk</option>
+        </select>
+        <div class="tooltip">
+
+            <input type="checkbox" class="checkbox" id="agrement" required>
+            consequatur Lorem ipsum de consequatur
+            Lorem ipsum de consequatur<span>[rozwin]</span>
+            <span class="tooltip-text">lorem korem lorem dore</span>
+            <div id="agrementError"></div>
+        </div>
+        <button type="submit" class="button">wyślij</button>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
