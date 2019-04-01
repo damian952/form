@@ -30,6 +30,7 @@ const checkTheBox = (evt) => {
         divOne.style.fontSize = `${divSize}px`
         divOne.style.color = "#c90027";
     }
+
     if (!email.checkValidity()) {
         divTwo.innerText = "Proszę wypełnić pole";
         divTwo.style.fontSize = `${divSize}px`
@@ -42,6 +43,8 @@ const checkTheBox = (evt) => {
         divThree.style.fontSize = `${divSize}px`
         divThree.style.color = "#c90027"
     }
+
+    console.log(agrement.checkValidity());
 
     if (!agrement.checkValidity()) {
         agrementError.innerText = "Prosze wyrazić zgodę";
